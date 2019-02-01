@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+.star
+{
+color:red;
+}
+fieldset
+{
+border:10px solid orange;
+width:1000px;
+}
+div{
+padding-left:35px;
+}
+</style>
+
+</head>
+<body>
+<form>
+<fieldset>
+<legend style="color:red;font-size:40px;">APPLICATION FORM</legend>
+<div>
+<label for="fname">First name:<span class="star">*</span></label></br>
+<input type="text" name="tname" id="fname" placeholder="please enter first name" required></br></br>
+<label for="lname">Last name:<span class="star">*</span></label></br>
+<input type="text" name="lname" id="lname" placeholder="please enter last name"required></br></br>
+<label for="mail">email:<span class="star">*</span></label></br>
+<input type="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" name="mail" id="mail" placeholder="please enter emailID" required></br></br>
+<label for="pass">Password:<span class="star">*</span></label></br>
+<input type="password" name="pass" id="pass" placeholder="please enter password" required></br></br>
+<label for"bday">Birthday:<span class="star">*</span></label></br>
+<input type="date" name="bday" id="bday" required></br>DD/MM/YYYY<br/></br>
+<label for="gen">Gender:<span class="star">*</span></label>
+<input type="radio" name="gen" id="gen" required>Male
+<input type="radio" name="gen" id="gen">Female</br></br>
+<label for="pne">Phone:<span class="star">*</span></label></br>
+<input type="tel" name="pne" id="pne"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10" required/></br></br>
+
+
+<label for="addr">Address:<span class="star">*</span></label></br>
+<textarea rows="4" cols="10" name="addr" id="addr" placeholder="please enter Address" required></textarea></br></br>
+<label for="zip">Zipcode:<span class="star">*</span></label></br>
+<input type="tel" name="zip" id="zip" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="please enter Zipcode" maxlength="6" required></br></br>
+<input type="checkbox" required>accept terms and conditions*</br></br>
+
+<input type="submit" value="submit" style="background-color:blue;">   &nbsp;&nbsp;<input type="reset" value="cancel" style="background-color:red;">
+</div>
+</fieldset>
+</form>
+</body>
+</html>
