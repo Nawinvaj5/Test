@@ -1,0 +1,17 @@
+<div> Hello Users </div>
+<button (click)="getData()"> Test</button>
+
+<div>
+
+    <table>
+        <thead>
+            <tr>
+                <th> Name</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of usersData">
+            <td>{{item.name}}</td>
+
+        </tbody>
+    </table>
+</div>
